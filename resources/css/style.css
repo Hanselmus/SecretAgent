@@ -4,6 +4,15 @@ body {
   font-family: Helvetica;
 }
 
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* borders for arrangement */
 div {
   border: 1px solid Red;
@@ -21,7 +30,6 @@ div {
 
 .logo {
   display: flex;
-  background-color: Blue;
   color: White;
   align-items: center;
   width: 960px;
@@ -34,6 +42,64 @@ div {
 }
 
 .logo h2 {
-  text-transform: capitalize;
   padding: 0.66rem 0.5rem;
+}
+
+/* Banner section */
+
+.banner {
+  height: 25rem;
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.middle {
+  width: 960px;
+  height: 100%;
+}
+.news {
+  background-color: Black;
+  width: 20rem;
+  margin-top: 9rem;
+  padding-left: 3rem;
+  color: White;
+  font-weight: bold;
+}
+
+.news h2 {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+  padding-bottom: 2rem;
+}
+
+/* navigation section */
+
+.menu {
+  width: 100%;
+  background-color: Firebrick;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: 960px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.nav a {
+  color: White;
 }
