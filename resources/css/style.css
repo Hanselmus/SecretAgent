@@ -1,0 +1,39 @@
+html,
+body {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/* borders for arrangement */
+div {
+  border: 1px solid Red;
+}
+
+/* Logo section */
+
+.top {
+  width: 100%;
+  background-color: Black;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  background-color: Blue;
+  color: White;
+  align-items: center;
+  width: 960px;
+}
+
+.logo img {
+  height: 1.5rem;
+  width: auto;
+  padding: 0rem 0.5rem;
+}
+
+.logo h2 {
+  text-transform: capitalize;
+  padding: 0.66rem 0.5rem;
+}
