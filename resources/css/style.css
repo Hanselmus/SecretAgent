@@ -219,7 +219,7 @@ h1 {
 }
 
 /* Phone version */
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 730px), (orientation: portrait) {
 
   .logo {
     justify-content: center;
