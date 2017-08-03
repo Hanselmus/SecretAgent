@@ -227,12 +227,12 @@ h1 {
 
   .banner {
     height: 15rem;
-    width: 100%;
   }
 
   .middle {
     display: flex;
     align-items: flex-end;
+    width: 100%;
   }
 
   .news {
