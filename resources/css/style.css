@@ -18,6 +18,10 @@ div {
   border: 1px solid Red;
 }
 
+.image img {
+  border: 1px dotted blue;
+}
+
 /* Logo section */
 
 .top {
@@ -111,13 +115,13 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 3rem;
 }
 
 .products {
   width: 960px;
   display: inline-flex;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .box {
@@ -129,11 +133,16 @@ h1 {
   justify-content: space-between;
 }
 
-.box img {
+.image {
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image img {
   max-height: 9rem;
-  max-width: 100%;
-  padding: 2rem;
-  border: 1px dotted blue;
+  max-width: 9rem;
 }
 
 .box h3 {
@@ -142,4 +151,41 @@ h1 {
   padding: 0.5rem 0rem;
   color: White;
   width: 100%;
+}
+
+/* Contact section */
+
+#contact {
+  width: 960px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.contact {
+  width: 35%
+}
+
+.contact h3 {
+  max-width: 100%;
+  background-color: Black;
+  color: White;
+  padding: 1rem 2rem;
+}
+
+/* Footer section */
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: Black;
+  align-content: center;
+  margin-top: 4rem;
+}
+
+.copy {
+  width: 960px;
+  color: White;
+  padding: 2rem 0rem;
 }
