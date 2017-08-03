@@ -221,6 +221,10 @@ h1 {
 /* Phone version */
 @media only screen and (max-width: 730px), (orientation: portrait) {
 
+  body {
+    font-size: 1.5rem;
+  }
+
   .logo {
     justify-content: center;
   }
