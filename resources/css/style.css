@@ -1,3 +1,14 @@
+
+/* borders for arrangement
+div {
+  border: 1px solid Red;
+}
+
+.image img {
+  border: 1px dotted blue;
+}
+*/
+
 html,
 body {
   font-size: 18px;
@@ -11,15 +22,7 @@ h2 {
 
 a {
   text-decoration: none;
-}
-
-/* borders for arrangement */
-div {
-  border: 1px solid Red;
-}
-
-.image img {
-  border: 1px dotted blue;
+  color: White;
 }
 
 /* Logo section */
@@ -94,20 +97,19 @@ h1 {
   justify-content: center;
 }
 
-.nav {
+.nav-desktop {
   width: 960px;
-}
-
-.nav ul {
-  display: flex;
-  justify-content: space-between;
   padding: 0.75rem 0;
 }
 
-.nav a {
-  color: White;
+.nav-desktop ul {
+  display: flex;
+  justify-content: space-between;
 }
 
+.nav-small {
+  display: none;
+}
 /* Products section */
 
 .main {
@@ -189,3 +191,90 @@ h1 {
   color: White;
   padding: 2rem 0rem;
 }
+
+/* Tablet version */
+
+@media only screen and (max-width: 1024px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .products,
+  #contact {
+    width: 100%;
+  }
+
+  .box {
+    width: 47%;
+  }
+
+  .nav-small {
+    display: block;
+    padding: 0.75rem 0;
+  }
+}
+
+/* Phone version */
+@media only screen and (max-width: 470px) {
+
+  .logo {
+    justify-content: center;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .middle {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .news {
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    padding-left: 2rem;
+  }
+
+  .news h2 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .products {
+    justify-content: center;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  #contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+
+  .contact {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  .copy {
+    text-align: center;
+  }
